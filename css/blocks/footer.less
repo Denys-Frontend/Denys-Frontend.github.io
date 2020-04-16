@@ -1,0 +1,241 @@
+//main: ../style.less
+
+.footer {
+    background: top/cover no-repeat url(../assets/images/bg-sm2.jpg);
+    color: @white;
+    padding-top: 100px;
+    
+    &__app {
+        margin-bottom: 65px;
+    }
+    
+    &__button-wrap {
+        margin-bottom: 125px;
+    }
+}
+
+.app {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    &__logo-wrap {
+        margin-bottom: 55px;
+    }
+    &__right {
+        position: relative;
+        z-index: 10;
+    }
+    
+    &__title {
+        
+        color: @white;
+        font-size: 2.1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+        margin: 0 0 5px 0;
+        
+        &::before {
+            content: '';
+            display: block;
+            width: 88px;
+            height: 4px;
+            position: absolute;
+            top: 50%;
+            left: -5%;
+            z-index: -1;
+            background-color:@decoration;
+            transform: rotate(-50deg);
+        }
+        
+        &::after {
+            content: '';
+            display: block;
+            width: 153px;
+            height: 4px;
+            position: absolute;
+            top: 50%;
+            right: 35px;
+            z-index: -1;
+            background-color:@decoration;
+            transform: rotate(-50deg);
+        }
+    }
+    
+    &__slogan {
+        color: @slogan;
+        font-size: 1rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        
+        margin: 0;
+    }
+}
+
+.footer-bottom {
+    background-color: rgba(10,14,52,0.6);
+    padding: 15px 0;
+    
+    &__row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    &__logo, .more-info {
+        display: none;
+    }
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    &__item + &__item {
+        margin-left: 40px;
+    } 
+    &__link {
+        color: @white;
+        font-size: 1.1rem;
+        transition: opacity .2s linear, color .2s linear;
+        
+        &:hover {
+            opacity: 1;
+            color: @purple;
+        }
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .app {
+        &__title {
+            font-size: 3.8rem;
+            &::before {
+                width: 130px;
+            }
+            &::after {
+                width: 250px;
+            }
+        }
+        &__slogan {
+            font-size: 1.7rem;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .footer {
+        background: top/cover no-repeat url(../assets/images/bg-f-table.jpg);
+        padding-top: 125px;
+        &__app {
+            margin-bottom: 185px;
+        }
+    }
+    
+    .app {
+        &__logo-wrap {
+            margin-bottom: 75px;
+        }
+        
+        &__title {
+            font-size: 5.3rem;
+            &::before {
+                height: 6px;
+                width: 205px;
+            }
+            &::after {
+                height: 6px;
+                width: 417px
+            }
+        }
+        
+        &__slogan {
+            font-size: 2.4rem;
+        }
+    }
+}
+
+.footer-bottom {
+    padding: 30px 0;
+}
+
+.social__link {
+    font-size: 1.66rem;
+    opacity: .8;
+}
+    
+@media only screen and (min-width: 992px) {
+    .footer {
+        background: top/cover no-repeat url(../assets/images/bg-desk.jpg);
+        &__app {
+            margin-top: 100px;
+            margin-bottom: 155px;
+        }
+        
+        .button+.button {
+            margin-left: 50px;
+        }
+        
+        &__button-wrap {
+            margin-bottom: 190px;
+        }
+    }
+    
+    .app {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        
+        &__logo-wrap {
+            margin-bottom: 0;
+            margin-right: 35px;
+        }
+    }
+    .footer-bottom {
+        padding: 35px 15px;
+        &__row {
+            justify-content: space-between;
+        }
+        
+        &__logo {
+            flex: 0 0 33.3333%;
+            display: block;
+            
+        }
+        .more-info {
+            flex: 0 0 33.3333%;
+            display: block;
+            text-align: right;
+            .more-info__link {
+                font-size: 1rem;
+                color: @white;
+                opacity: .8;
+                transition: color .2s linear, opacity .2s linear;
+                
+                &:hover {
+                    color: @purple;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+    .social__link {
+        opacity: .8;
+    }
+}    
+    
+@media only screen and (min-width: 1200px) {
+    .app {
+        &__title {
+            font-size: 6rem;
+        }
+    }
+    
+    .footer-bottom {
+        padding: 40px 50px;
+        .more-info .more-info__link {
+            font-size: 1.3rem;
+        }
+    }
+}

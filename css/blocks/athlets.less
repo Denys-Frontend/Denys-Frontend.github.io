@@ -1,0 +1,180 @@
+//main: ../style.less
+
+.athlets {
+    padding-top: 40px;
+    &__title {
+        color: @title;
+        font-size: 3.33rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0;
+    }
+    &__image-wrap {
+        display: block;
+        text-align: center;
+        position: relative;
+        margin-top: -60px;   
+    }
+    &__image {
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        top: 60px;
+        z-index: 10;
+    }
+    &__list {
+        counter-reset: list;
+    }
+}
+
+.benefit {
+    padding: 80px 0 60px 0;
+    background-color: @light-grey;
+    
+    &__title {
+        position: relative;
+        color: @grey;
+        font-size: 1.9rem;
+        font-weight: 700;
+        line-height: 1.9rem;
+        text-transform: uppercase;
+        padding-left: 30px;
+        margin: 0 0 20px;
+        
+        &::before {
+            counter-increment: list;
+            content: '0'counter(list);
+            display: inline-block;
+            position: absolute;
+            top: 3px;
+            left: 0;
+            color: @black;
+            font-size: .92rem;
+            line-height: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+        
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 3px;
+            left: 0;
+            width: 18px;
+            height: 4px;
+            background-color: @main;
+            border-radius: 2px;
+        }
+    }
+    
+    &__description {
+        color: @black;
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .benefit {
+        &:nth-child(3n+2) {
+            background-color: @white;
+        }
+    
+        &:nth-child(3n+3) {
+            background-color: @main;
+
+            .benefit__title::after {
+                background-color: @grey;
+            }
+
+            .benefit__description {
+                color: @grey;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .athlets {
+        position: relative;
+        padding-top: 60px; 
+        overflow: hidden;
+        
+        
+        &__content {
+            margin-left: 35%;
+        }
+        
+        &__title {
+            font-size: 6rem;    
+        }
+        
+        &__image-wrap {
+            position: absolute;
+            margin-top: 0;
+            top: 90px;
+            left: -180px;
+        }
+        
+        &__image {
+            position: static;
+        }
+    }
+    
+    .benefit {
+        padding: 50px 0;
+        
+        &__title {
+            font-size: 2.3rem;
+            &::before {
+                font-size: 1.2rem;
+            }
+            &::after {
+                width: 22px;
+                height: 5px;
+            }
+        }
+    }
+}  
+
+@media only screen and (min-width: 992px) {
+    .athlets__image-wrap {
+        top: 70px;
+        left: -85px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .athlets {
+        padding-top: 80px;
+        overflow: visible;
+        
+        &__content {
+            margin-left: 50%;
+        }
+        
+        
+        &__image-wrap {
+            top: 10px;
+            left: 50%;
+            transform: translate(-90%, 0);
+        }
+        
+        &__title {
+            margin-bottom: 50px;
+        }
+    }
+    
+    .benefit {
+        padding: 55px 0;
+        &__title {
+            margin-bottom: 30px;
+        }
+        
+        &__description {
+            font-size: 1.4rem;
+        }
+    }
+}

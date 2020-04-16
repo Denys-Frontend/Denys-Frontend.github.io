@@ -1,0 +1,85 @@
+@main: #5e42b0;
+@purple: #9071ea;
+@white: #fff;
+@light-grey: #f5f4f9;
+@grey: #c1c1c1;
+@black: #000;
+@title: #e7e7e7;
+@slogan: #9b8ec1;
+@decoration: #936eea;
+@players: #0a0e34;
+
+
+
+*,
+*::after,
+*::before, {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+.container {
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.controls-wrapper {
+    display: none;
+}
+
+@import "blocks/header";
+@import "blocks/buttons";
+@import "blocks/athlets";
+@media only screen and (max-width: 575px) {
+    @import "blocks/slider";
+}
+@import "blocks/players";
+@import "blocks/details";
+@import "blocks/footer";
+
+
+
+@media only screen and (min-width: 576px) {
+    .contaier {
+        max-width: 570px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .container {
+        max-width: 760px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+

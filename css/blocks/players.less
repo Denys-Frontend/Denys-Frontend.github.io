@@ -1,0 +1,72 @@
+//main: ../style.less
+
+.players {
+    padding-top: 40px;
+    &__image-wrap {
+        position: relative;
+        text-align: center;
+        margin-top: -60px;
+    }
+    &__image {
+        max-width: 100%;
+        height: auto;
+        position: relative;
+        top: 60px;
+        z-index: 10;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .players .benefit:nth-child(3n+3) {
+        background-color: @players;
+        
+        .benefit__title::before {
+            color: @purple;
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .players {
+        position: relative;
+        padding-top: 60px;
+        overflow: hidden;
+        
+        &__image-wrap {
+            position: absolute;
+            margin-top: 0;
+            top: 45px;
+            right: -215px;
+        }
+        
+        &__image {
+            position: static;
+        }
+        
+        &__content {
+            margin-right: 35%;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .players__image-wrap {
+        right: -55px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .players {
+        padding-top: 80px;
+        
+        &__image-wrap {
+            top: 0;
+            right: 26%;
+            transform: translate(30%, 0);
+            user-select:none;
+        }
+        &__content {
+            margin-right: 50%;
+        }
+    }
+}

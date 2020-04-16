@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Surface</title>
+    <link rel="shortcut icon" href="assets/images/logos/logo.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:300,400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<!--HEADER-->
+   
+    <header class="header">
+        <div class="container">
+            <div class="logo header__logo">
+                <a href="#"><img src="assets/images/logos/logo.svg" class="logo__image" alt="site logo"></a>
+                <span class="logo__text">for athlets and coaches</span>
+            </div>
+            <h1 class="header__title">
+                <span class="header__title_l">Be recruted</span> 
+                <span class="header__title_r">Play college sports</span>
+            </h1>
+            <nav class="nav header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link">Football</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Basketball</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Baseball</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Soccer</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Ice Hockey</a></li>
+                </ul>
+            </nav>
+            <div class="button-wrap header__button-wrap">
+                <a href="#" target="_blank" class="button">
+                    <i class="fab fa-apple"></i>
+                    <span>download on the<br><span class="button__app-text">app store</span></span>
+                </a>
+                <a href="#" target="_blank" class="button">
+                    <i class="fab fa-google-play"></i>
+                    <span>get it on<br><span class="button__app-text">google play</span></span>
+                </a>
+            </div>
+            
+        </div>
+    </header>
+    <main>
+       
+<!--ATHLETS-->
+       
+        <section class="athlets">
+            <div class="container">
+                <div class="athlets__content">
+                    <h2 class="athlets__title">Athlets</h2>
+                </div>
+            </div>
+            <picture class="athlets__image-wrap">
+                <source srcset="assets/images/athlets/footballer-desktop.png" media="(min-width:1200px)">
+                <source srcset="assets/images/athlets/football-tablet.png" media="(min-width:768px)">
+                <img src="assets/images/athlets/footballer-sm.png" alt="footballer" class="athlets__image">
+            </picture>
+            <ol class="athlets__list slider">
+                <input type="radio" name="controls" id="slide-1"  class="slide" hidden>
+                <li class="athlets__benefit benefit">
+                    <div class="container">
+                        <div class="athlets__content">
+                            <h3 class="benefit__title title">Connection</h3>
+                            <p class="benefit__description">Connect with coaches directly, you can ping coaches to view profile.</p>
+                        </div>
+                    </div>
+                </li>
+                <input type="radio" name="controls" id="slide-2"  class="slide" hidden checked>
+                <li class="athlets__benefit benefit">
+                    <div class="container">
+                        <div class="athlets__content">
+                            <h3 class="benefit__title title">Collaboration</h3>
+                            <p class="benefit__description">Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface1.</p>
+                        </div>
+                    </div>
+                </li>
+                <input type="radio" name="controls" id="slide-3"  class="slide" hidden>
+                <li class="athlets__benefit benefit">
+                    <div class="container">
+                        <div class="athlets__content">
+                            <h3 class="benefit__title title">Growth</h3>
+                            <p class="benefit__description">Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc.</p>
+                        </div>
+                    </div>
+                </li>
+            
+                <div class="controls-wrapper">
+                    <label for="slide-1" class="controls"></label>
+                    <label for="slide-2" class="controls controls_active"></label>
+                    <label for="slide-3" class="controls"></label>
+                </div>
+            </ol>
+        </section>
+        
+<!--PLAYERS-->
+        
+        <section class="players">
+            <div class="container">
+                <div class="players__content">
+                    <h2 class="athlets__title">Players</h2>
+                </div>
+            </div>
+            <picture class="players__image-wrap">
+                
+                    <source srcset="assets/images/athlets/basket-l.png" media="(min-width:1200px)">
+                    <source srcset="assets/images/athlets/basket-tablet.png" media="(min-width:768px)">
+                    <img src="assets/images/athlets/busket-sm.png" alt="footballer" class="players__image">
+                
+            </picture>
+            <ol class="athlets__list slider">
+                <input type="radio" name="controls2" id="slide-4"  class="slide" hidden>
+                <li class="players__benefit benefit">
+                    <div class="container">
+                        <div class="players__content">
+                            <h3 class="benefit__title title">Connection</h3>
+                            <p class="benefit__description">Connect with talented athlete directly, you can watch their skills through video showreels directly from Surface 1.</p>
+                        </div>
+                    </div>
+                </li>
+                <input type="radio" name="controls2" id="slide-5"  class="slide" hidden>
+                <li class="players__benefit benefit">
+                    <div class="container">
+                        <div class="players__content">
+                            <h3 class="benefit__title title">Collaboration</h3>
+                            <p class="benefit__description">Work with recruiter to increase your chances of finding talented athlete.</p>
+                        </div>
+                    </div>
+                </li>
+                <input type="radio" name="controls2" id="slide-6"  class="slide" hidden checked>
+                <li class="players__benefit benefit">
+                    <div class="container">
+                        <div class="players__content">
+                            <h3 class="benefit__title title">Growth</h3>
+                            <p class="benefit__description">Save your time, recruit proper athlets for your team.</p>
+                        </div>
+                    </div>
+                </li>
+            
+                <div class="controls-wrapper">
+                    <label for="slide-4" class="controls"></label>
+                    <label for="slide-5" class="controls"></label>
+                    <label for="slide-6" class="controls controls_active"></label>
+                </div>
+            </ol>
+        </section>
+        
+<!--DETAILS-->
+       
+       <section class="details">
+           <ol class="details__list">
+               <li class="details__card card">
+                   <picture class="card__image-wrap">
+                       <source srcset="assets/images/content/content-l-1.jpg" media="(min-width:1200px)">
+                       <source srcset="assets/images/content/content-tb.jpg" media="(min-width:768px)">
+                       <img src="assets/images/content/content-sm1.jpg" alt="texting man" class="card__image">
+                   </picture>
+                   <div class="card__content">
+                       <div class="container">
+                           <h3 class="card__title">Be active</h3>
+                           <p class="card__descr">Post videos with your skills, Like and follow others to be more popular.</p>
+                       </div>
+                   </div>
+               </li>
+               <li class="details__card card">
+                   <picture class="card__image-wrap">
+                         <source srcset="assets/images/content/content-l-2.jpg" media="(min-width:1200px)">
+                         <source srcset="assets/images/content/content-tb2.jpg" media="(min-width:768px)">
+                         <img src="assets/images/content/content-sm2.jpg" alt="texting man" class="card__image">
+                   </picture>
+                   <div class="card__content">
+                       <div class="container">
+                           <h3 class="card__title">Find Contact</h3>
+                           <p class="card__descr">Contact others to find right coach or athlete you are looking for. </p>
+                       </div>
+                   </div>
+               </li>
+               <li class="details__card card">
+                   <picture class="card__image-wrap">
+                       <source srcset="assets/images/content/content-l-3.jpg" media="(min-width:1200px)">
+                       <source srcset="assets/images/content/content-tb3.jpg" media="(min-width:768px)">
+                       <img src="assets/images/content/content-sm3.jpg" alt="texting man" class="card__image">
+                   </picture>
+                   <div class="card__content">
+                       <div class="container">
+                           <h3 class="card__title">Work It</h3>
+                           <p class="card__descr">Enjoy being a student athlete, the recruiting process can be overwhelming, we want to make this a enjoyable experience. </p>
+                       </div>
+                   </div>
+               </li>
+           </ol>
+       </section>
+        
+    </main>
+    
+<!--FOOTER-->
+   
+    <footer class="footer">
+        <div class="container">
+            <div class="app footer__app">
+                <picture class="app__logo-wrap">
+                    <source srcset="assets/images/logos/logo-large.png" media="(min-width: 768px)">
+                    <img src="assets/images/logos/logo.png" alt="Surface1 logo" class="app__logo">
+                </picture>
+                <div class="app__right">
+                    <h2 class="app__title">Download App</h2>
+                    <p class="app__slogan">Show everyone what yu can do!</p>
+                </div>
+            </div>
+            <div class="button-wrap footer__button-wrap">
+                <a href="#" target="_blank" class="button">
+                    <i class="fab fa-apple"></i>
+                    <span>download on the<br><span class="button__app-text">app store</span></span>
+                </a>
+                <a href="#" target="_blank" class="button">
+                    <i class="fab fa-google-play"></i>
+                    <span>get it on<br><span class="button__app-text">google play</span></span>
+                </a>
+            </div>
+        </div>
+        
+<!--BOTTOM-->
+        
+        <div class="footer-bottom">
+            <div class="footer-bottom__row">
+                <div class="footer-bottom__logo">
+                    <a href="#">
+                        <img src="assets/images/logos/logo.svg" alt="Surface1 logo">
+                    </a>
+                </div>
+                <ul class="social">
+                    <li class="social__item"><a href="#" target="_blank" class="social__link"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="social__item"><a href="#" target="_blank" class="social__link"><i class="fab fa-twitter"></i></a></li>
+                    <li class="social__item"><a href="#" target="_blank" class="social__link"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+                <div class="more-info">
+                    <a href="#" class="more-info__link">Contact Us</a> |
+                    <a href="#" class="more-info__link">Terms &amp; Conditions</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
